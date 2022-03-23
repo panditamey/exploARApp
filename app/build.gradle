@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.ar.sceneform.plugin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.ameypandit.exploar"
+        minSdk 28
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // Provides ARCore Session and related resources.
+    implementation 'com.google.ar:core:1.19.0'
+// Alternatively, use ArSceneView without the UX dependency.
+    implementation 'com.google.ar.sceneform:core:1.17.1'
+    // Provides ArFragment, and other UX resources.
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.17.1'
+
+
+}
+//sceneform.asset('sampledata/cpu.fbx',
+//        'default',
+//        'sampledata/cpu.sfa',
+//        'src/main/res/raw/cpu')
+//sceneform.asset('sampledata/basketball.fbx',
+//        'default',
+//        'sampledata/basketball.sfa',
+//        'src/main/res/raw/basketball')
+//sceneform.asset('sampledata/colosseum.fbx',
+//        'default',
+//        'sampledata/colosseum.sfa',
+//        'src/main/res/raw/colosseum')
+//sceneform.asset('sampledata/maths.fbx',
+//        'default',
+//        'sampledata/maths.sfa',
+//        'src/main/res/raw/maths')
+sceneform.asset('sampledata/cell.fbx',
+        'default',
+        'sampledata/cell.sfa',
+        'src/main/res/raw/cell')
+//sceneform.asset('sampledata/water.fbx',
+//        'default',
+//        'sampledata/water.sfa',
+//        'src/main/res/raw/water')
+
+
+//sceneform.asset('sampledata/comp1.fbx',
+//        'default',
+//        'sampledata/comp1.sfa',
+//        'src/main/res/raw/comp1')
+//        ['sampledata/colosseum-rome-italy.fbx',
+//         'sampledata/colosseum-rome-italy.fbx'])

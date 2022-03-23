@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#047CAC"
+    android:scrollbars="none"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/historyBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/historyImg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/hourglass"
+                />
+
+            <TextView
+                android:id="@+id/historytxt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scienceBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/shape"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/sciimg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/chemistry" />
+
+            <TextView
+                android:id="@+id/sciencetxt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="Science"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/geoBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/historyBtn"
+            app:layout_constraintStart_toStartOf="@+id/historyBtn"
+            app:layout_constraintTop_toBottomOf="@+id/historyBtn">
+
+            <ImageView
+                android:id="@+id/geoImg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/geo" />
+
+            <TextView
+                android:id="@+id/geotxt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Geography"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mathsBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/scienceBtn"
+            app:layout_constraintStart_toStartOf="@+id/scienceBtn"
+            app:layout_constraintTop_toBottomOf="@+id/scienceBtn">
+
+            <ImageView
+                android:id="@+id/mathsimg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/tools" />
+
+            <TextView
+                android:id="@+id/mathstxt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="Maths"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sportsBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/geoBtn"
+            app:layout_constraintStart_toStartOf="@+id/geoBtn"
+            app:layout_constraintTop_toBottomOf="@+id/geoBtn">
+
+            <ImageView
+                android:id="@+id/sportsImg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/sportss" />
+
+            <TextView
+                android:id="@+id/sportstxt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Sports"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ictBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/mathsBtn"
+            app:layout_constraintStart_toStartOf="@+id/mathsBtn"
+            app:layout_constraintTop_toBottomOf="@+id/mathsBtn">
+
+            <ImageView
+                android:id="@+id/ictimg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/computer" />
+
+            <TextView
+                android:id="@+id/icttxt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="ICT"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView >

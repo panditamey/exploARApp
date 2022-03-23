@@ -1,0 +1,144 @@
+{
+  animations: [
+    {
+      path: 'sampledata/cpu.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'main part',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Cpu_8086_low_main_part_BaseColor',
+        },
+        {
+          normalMap: 'Cpu_8086_low_main_part_Normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'processor metal',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Cpu_8086_low_processor_metal_BaseColor',
+        },
+        {
+          normalMap: 'Cpu_8086_low_processor_metal_Normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/cpu.fbx',
+    name: 'cpu',
+    recenter: 'root',
+    scale: 0.97645800000000005,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\cpu.fbm\\Cpu_8086_low_main_part_BaseColor.png',
+      name: 'Cpu_8086_low_main_part_BaseColor',
+      pipeline_name: 'cpu.fbm\\Cpu_8086_low_main_part_BaseColor.png',
+    },
+    {
+      file: 'sampledata\\cpu.fbm\\Cpu_8086_low_main_part_Normal.png',
+      name: 'Cpu_8086_low_main_part_Normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'cpu.fbm\\Cpu_8086_low_main_part_Normal.png',
+    },
+    {
+      file: 'sampledata\\cpu.fbm\\Cpu_8086_low_processor_metal_BaseColor.png',
+      name: 'Cpu_8086_low_processor_metal_BaseColor',
+      pipeline_name: 'cpu.fbm\\Cpu_8086_low_processor_metal_BaseColor.png',
+    },
+    {
+      file: 'sampledata\\cpu.fbm\\Cpu_8086_low_main_part_Metallic.png',
+      name: 'Cpu_8086_low_main_part_Metallic',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'cpu.fbm\\Cpu_8086_low_main_part_Metallic.png',
+    },
+    {
+      file: 'sampledata\\cpu.fbm\\Cpu_8086_low_processor_metal_Normal.png',
+      name: 'Cpu_8086_low_processor_metal_Normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'cpu.fbm\\Cpu_8086_low_processor_metal_Normal.png',
+    },
+    {
+      file: 'sampledata\\cpu.fbm\\Cpu_8086_low_processor_metal_Metallic.png',
+      name: 'Cpu_8086_low_processor_metal_Metallic',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'cpu.fbm\\Cpu_8086_low_processor_metal_Metallic.png',
+    },
+  ],
+  version: '0.54:2',
+}

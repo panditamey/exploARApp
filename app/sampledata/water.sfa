@@ -1,0 +1,69 @@
+{
+  animations: [
+    {
+      path: 'sampledata/water.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Object001_mtl',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Object001_2015-03-18_12-58-09_complete.rpf_converted',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/water.fbx',
+    name: 'water',
+    recenter: 'root',
+    scale: 0.62885199999999997,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\water.fbm\\Object001_2015-03-18_12-58-09_complete.rpf_converted.jpg',
+      name: 'Object001_2015-03-18_12-58-09_complete.rpf_converted',
+      pipeline_name: 'water.fbm\\Object001_2015-03-18_12-58-09_complete.rpf_converted.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

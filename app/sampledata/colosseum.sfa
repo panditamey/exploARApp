@@ -1,0 +1,69 @@
+{
+  animations: [
+    {
+      path: 'sampledata/colosseum.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Colosseum_Rome_Italy',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Colosseum_Rome_Italy.tga',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/colosseum.fbx',
+    name: 'colosseum',
+    recenter: 'root',
+    scale: 0.039923,
+  },
+  samplers: [
+    {
+      file: 'C:\\Users\\Amey\\Downloads\\ASSETS\\colosseum-rome-italy\\textures\\Colosseum_Rome_Italy.tga.png',
+      name: 'Colosseum_Rome_Italy.tga',
+      pipeline_name: 'C:\\Users\\Amey\\Downloads\\ASSETS\\colosseum-rome-italy\\textures\\Colosseum_Rome_Italy.tga.png',
+    },
+  ],
+  version: '0.54:2',
+}
